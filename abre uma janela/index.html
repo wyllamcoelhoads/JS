@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Abrir uma nova tela</title>
+  <script>
+    function abrirTela() {
+      // Abre uma nova janela
+      var novaJanela = window.open('', '_blank', 'width=400,height=300');
+      
+      // Escreve algo na nova janela
+      novaJanela.document.write('<h1>Olá! Esta é uma nova tela.</h1>');
+    }
+  </script>
+</head>
+<body>
+
+<button onclick="abrirTela()">Abrir Tela</button>
+
+</body>
+</html>
