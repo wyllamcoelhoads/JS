@@ -19,8 +19,12 @@ expressao_2 = (x % 2 == 1) // é impar?
 console.log(expressao_1) // false
 console.log(expressao_2) // true
 */
-//comparanto as duas expressoees ao mesmos tempo
+//comparanto as duas expressoees ao mesmos tempo com operador and 
 
-console.log( expressao_1 && expressao_2) // false
+//console.log( expressao_1 && expressao_2) // false
+
+// operador or
+
+console.log( expressao_1 || expressao_2) // true
 
 
