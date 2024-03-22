@@ -20,11 +20,17 @@ console.log(expressao_1) // false
 console.log(expressao_2) // true
 */
 //comparanto as duas expressoees ao mesmos tempo com operador and 
-
-//console.log( expressao_1 && expressao_2) // false
+console.log("operacao logica com and")
+console.log( expressao_1 && expressao_2) // false
 
 // operador or
-
+console.log("operacao logica com or")
 console.log( expressao_1 || expressao_2) // true
+
+// operador not
+console.log("operacao logica com not")
+console.log (!(expressao_1 && expressao_2))
+console.log (!(expressao_1 || expressao_2))
+
 
 
