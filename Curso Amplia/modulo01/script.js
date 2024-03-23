@@ -33,4 +33,15 @@ console.log (!(expressao_1 && expressao_2))
 console.log (!(expressao_1 || expressao_2))
 
 
+function primeiraetapa(acertos_na_prova, semestres_cursados){
+
+    const total_questoes = 20
+    const nota_minina_aprovacao = 0.7
+    const min_semestre = 3
+}
+
+let nota = acertos_na_prova / total_questoes
+
+if ()
+
 
