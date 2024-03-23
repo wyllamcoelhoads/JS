@@ -9,7 +9,7 @@ if(x % 2 == 0){
 }
 */
 //testando uma condição com tipos não numericos
-
+/*
 idade = "6";
 
 if(idade >= 4 && idade <6){
@@ -23,3 +23,31 @@ if(idade >= 4 && idade <6){
 }
 console.log("*************************");
 console.log("Fim do validação")
+*/
+
+// alteração no codigo da primeira aula 
+
+function primeiraetapa(acertos_na_prova, semestres_cursados){
+    const total_questoes = 20
+    const nota_minina_aprovacao = 0.7
+    const min_semestre = 3
+
+let nota = acertos_na_prova / total_questoes
+
+if((nota >= nota_minina_aprovacao) && (semestres_cursados >= min_semestre)){
+/*    return "Aprovado";
+}else{
+    return "Reprovado";
+    // apos ser reprovado caso o candidato tenha atingido 70% de acerto no teste ele vai ficar no banco de talentos.
+}
+*/
+//novo codigo
+return "Aprovado!";
+}else if(nota >= nota_minina_aprovacao){
+    return "Você foi incluido no nosso banco de talentos!!";
+}else{
+    return "Reprovado!";
+}
+
+}
+console.log(primeiraetapa(10, 1)); // Chamada da função e impressão do resultado no console
