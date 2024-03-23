@@ -2,6 +2,6 @@
 
 var x = 1;
 
-if(x % 2 == 1){
-    console.log("Numero impar");
+if((x % 2 == 1) || (x > 0)){
+    console.log("Numero impar ou positivo");
 }
