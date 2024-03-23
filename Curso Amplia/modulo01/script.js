@@ -40,7 +40,7 @@ function primeiraetapa(acertos_na_prova, semestres_cursados){
 
 let nota = acertos_na_prova / total_questoes
 
-if((nota > nota_minina_aprovacao) && (semestres_cursados >= min_semestre)){
+if((nota >= nota_minina_aprovacao) && (semestres_cursados >= min_semestre)){
     return "Aprovado";
 }else{
     return "Reprovado";
