@@ -1,3 +1,45 @@
+const routes = {
+  champions: "http://localhost:8080/champions",
+  ask: "http://localhost:8080/champions/{id}/ask"
+};
+
+const apiService = {
+  async getChampions (){
+    const route = routes.champions;
+    const response = await fetch(route)
+    return await response.json();
+  },
+  async postAskChampion(id, message){
+    const route = routes.ask.replace("{id}",id);
+
+    const options = {
+      method: "POST",
+      header:{
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        
+          question: message,
+        }),
+      };
+    const response = await fetch(route)
+
+  },
+}
+
+async function main(){
+
+  // 1. chamada pra api do veniltão
+  console.log(await apiService.postAskChampion(1,"olá"));
+  // 2. guardar dados de personagens
+  // 3. carregar personagens na tela 
+  // 4. resetar a tela
+
+
+
+  await loadCarrousel();
+}
+
 async function loadCarrousel() {
   const caroujs = (el) => {
     return $("[data-js=" + el + "]");
@@ -28,4 +70,4 @@ async function loadCarrousel() {
   });
 }
 
-loadCarrousel();
+main();
